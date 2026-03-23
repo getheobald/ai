@@ -52,30 +52,8 @@ shapePos, currentShapeIndex, currentColorIndex, grid, placedShapes, done = game.
 print(shapePos, currentShapeIndex, currentColorIndex, grid, placedShapes, done)
 
 
-####################################################
-# Timing your code's execution for the leaderboard.
-####################################################
+start = time.time()  # time code execution
 
-start = time.time()  # <- do not modify this.
-
-
-
-##########################################
-# Write all your code in the area below. 
-##########################################
-
-"""
-General AI Disclosure
-
-I used Claude to go over my notes from class on local search and help think about how I would need to apply them to this problem;
-to review my ideas about which helper functions I might need; and to check my understanding of what an objective function looks like
-for a case like this.
-
-For the implementation, I am new to Python so in some cases I asked for help translating pseudocode to code and writing
-cleaner versions of what I was trying to do. As an example, I've never used enumerate() before, but it made my
-adjacency constraint check a lot simpler. I put comments in places where I got specific help.
-
-"""
 
 def get_empty_cells(grid):
     # Returns array of empty cells, which are all cells with value of -1
@@ -309,11 +287,6 @@ def main():
 # Run
 main()
 
-########################################
-
-# Do not modify any of the code below. 
-
-########################################
 
 end=time.time()
 
