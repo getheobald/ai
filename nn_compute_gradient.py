@@ -45,7 +45,6 @@ d_relu = (z > 0).astype(float) # capture piecewise func by casting boolean
 transpose_V = V.T # need V in the right shape to mult by rest of equation
 grad_W = np.outer((transpose_V @ grad_shared) * d_relu, xi)
 
-
 # grad of L wrt V
 # (softmax - yi) sig (1 - sig) ReLU(W dot xi)
 grad_V = np.outer(grad_shared, h)
