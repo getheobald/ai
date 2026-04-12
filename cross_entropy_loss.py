@@ -1,6 +1,5 @@
 import numpy as np
-from scipy.special import expit
-from scipy.special import softmax
+from scipy.special import expit, softmax
 
 # input
 xi = np.array([6, 4, 7, 2, 1])
