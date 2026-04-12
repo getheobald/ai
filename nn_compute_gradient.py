@@ -3,6 +3,7 @@ from scipy.special import expit, softmax
 
 # using np to solve the formulas I wrote by hand
 # for gradient of categorical crossentropy loss for the given NN
+# note: ignored bias terms to avoid some complexity!
 
 # SETUP
 
