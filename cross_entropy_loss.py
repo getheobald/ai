@@ -32,18 +32,18 @@ h1 = relu(z1)
 h2 = relu(z2)
 h = np.array([h1, h2])
 
-# output later inputs
-u1 = np.dot(v1, h) + b_v1
-u2 = np.dot(v2, h) + b_v2
-u3 = np.dot(v3, h) + b_v3
+# output layer inputs
+o1 = np.dot(v1, h) + b_v1
+o2 = np.dot(v2, h) + b_v2
+o3 = np.dot(v3, h) + b_v3
 
 # output layer activation func (sigmoid)
-s1 = expit(u1)
-s2 = expit(u2)
-s3 = expit(u3)
+sig1 = expit(o1)
+sig2 = expit(o2)
+sig3 = expit(o3)
 
 # softmax
-probabilities = softmax([s1, s2, s3])
+probabilities = softmax([sig1, sig2, sig3])
 
 # cross entropy loss for 1 class
 loss = -np.log(probabilities[1])
