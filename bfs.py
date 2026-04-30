@@ -1,7 +1,6 @@
 from collections import deque
 
 """"
-showing bella how to use git
 def BFS (G, s):
 	Q.enqueue( s )
 	mark s as visited
